@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+         let friends = [{person:"bathri",age:"22",city:"arakonam"},
+                        {person:"calabe",age:"20",city:"ambathur"},
+                        {person:"john",age:"22",city:"perambur"},]
+                
+                    
+
+     //for loop   
+        
+        for (let i=0; i<friends.length; i++){
+
+            console.log(`
+            person:${friends[i].person}
+            age:${friends[i].age}
+            city:${friends[i].city}`)
+        }
+
+    //for in loop 
+        
+       for(let index in friends){
+
+            console.log(`
+          person:${friends[index].person}
+          age:${friends[index].age}
+          city:${friends[index].city}`)
+       }
+
+    //for of looping
+       
+       for (let frd of friends){
+
+            console.log(`
+          person:${friends[index].person}
+          age:${friends[index].age}
+          city:${friends[index].city}`) 
+       }
+          
+
+    //foreach looping
+    
+         friends.forEach((frd)=>{
+
+               console.log(`
+          person:${friends[index].Person}
+          age:${friends[index].age}
+          city:${friends[index].city}`)
+            
+         })
+        </script>
+</body>
+</html>
